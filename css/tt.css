@@ -1,0 +1,31 @@
+body{margin: 0}
+table { 
+    border-collapse:collapse;
+     border: 1px solid #c2d3de;
+} .cont {
+        background-color:#FCF3CF; padding: 50px 200px;
+    margin: auto; height: 600px;
+} 
+.bb {
+    border-collapse:collapse;
+    background: white; width: 100%;
+   border-radius: 10px;   
+} .bb td, .bb th{padding: 15px;   border: 1px solid #c2d3de;  } 
+.bb td:nth-child(3){text-align: right}
+p {
+    text-align: left;
+} .all {
+    width: 18%
+} .shake{border: none; padding: 10px;width: 100px;background-color: black;
+    color: white;margin: 20px auto;float: right
+} .shake:hover{animation-name: 흔들; animation-duration: 0.5s;animation-iteration-count: 3 }
+@keyframes 흔들{0%{transform: rotate(0deg)} 25%{transform: rotate(-18deg)} 
+    50%{transform: rotate(18deg)} 75%{transform: rotate(-18deg)} 
+    100%{transform: rotate(0deg)}}
+ .cros{font-size: 50px;cursor: pointer;width: 34px;margin: 10px auto}
+.cros:hover{animation-name: cs; animation-duration: 0.5s; animation-fill-mode: forwards;animation-iteration-count: 3}
+@keyframes cs{0%{transform: rotate(0deg)} 25%{transform: rotate(-25deg)} 
+      100%{transform: rotate(60deg) scale(1.5)}}
+@media (max-width:1300px){.cont{padding: 50px 100px;}}
+@media (max-width:900px){.cont{padding: 50px 50px;}}
+h1::before{ content: '';display: block;clear: both} 

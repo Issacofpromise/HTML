@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="../css/last.css" rel="stylesheet">
+
+ </head>
+  <body> 
+  <div class="mull"><div class="mt-4">
+<i class="fa-sharp fa-solid fa-house"></i> <span>Home</span> 
+</div><div>
+<i class="fa-sharp fa-solid fa-user"></i> <span class='ms-1'>User</span></div>
+<div><i class="fa-sharp fa-solid fa-headset"></i><span class='ms-2'>Services</span></div>
+<div><i class="fa-sharp fa-solid fa-chart-pie"></i><span class='ms-2'>Stats</span></div>
+</div>
+ <div class="content">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>
+<ul class="navbar-nav ms-auto">
+ <li class="nav-item">
+     <a class="nav-link" href="#"><span class="badge bg-danger">7</span>
+     <i class="fas fa-bell"></i></a></li>
+ <li class="nav-item">
+ <a class="nav-link" href="#"><span class="badge bg-danger">49+</span><i class="fa-solid fa-envelope"></i></a></li>    
+ <li class="nav-item">
+ <a class="nav-link" href="#">  MiYeon Lee' miniroom</a>
+</li></ul>
+      </div>
+        </div></nav>
+ <div class="container bg-light"><h4 class="my-4">Dashboard</h4>
+    <div class="row">
+<div class="col-lg-3"><div class="card" style="border-left: 3px solid red">
+  <div class="card-body d-flex justify-content-between">
+    <div><p class="mb-2">Earnings (Monthly)</p><h4>$400,000</h4></div>
+   <i class="fa-brands fa-shopify" style="font-size: 25px; margin-top: 20px"></i>
+ </div>   
+</div></div>
+<div class="col-lg-3"><div class="card" style="border-left: 3px solid green">
+  <div class="card-body d-flex justify-content-between">
+   <div><p class="mb-2">Earnings (Annual)</p><h4>$800,000</h4> </div>
+   <i class="fa-brands fa-shopify" style="font-size: 25px; margin-top: 20px"></i></div></div></div>
+<div class="col-lg-3"><div class="card" style="border-left: 3px solid violet">
+  <div class="card-body d-flex justify-content-between">
+   <div><p class="mb-2">Tasks</p><h4>14</h4></div>
+<div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="33" margin-top="20px"
+ fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+</svg></div>
+   </div></div></div>
+<div class="col-lg-3"><div class="card" style="border-left: 3px solid blue">
+  <div class="card-body d-flex justify-content-between">
+    <div><p class="mb-2">Requests</p><h4>144</h4></div>
+   <i class="fa-solid fa-comments" style="font-size: 25px; margin-top: 20px"></i></div></div></div>
+    </div>
+</div> 
+<div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-lg-8 mb-4"> <div class="card">
+ <div class="card-header">Earnings Overview</div>
+ <div class="card-body"><canvas id="myChart"></canvas></div></div></div>
+      <div class="col-lg-4"><div class="card">
+  <div class="card-header">   Featured  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item d-flex justify-content-between align-items-start">An item
+    <span class="badge bg-primary rounded-pill">14</span></li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+  </ul></div></div>  </div>  </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Blue', 'Red', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{ label: 'Last of CSS', data: [12, 19, 3, 5, 20, 3],       
+          borderColor: 'rgb(75, 192, 192)', backgroundColor:'rgb(75, 192, 192)',
+          fill:true, tension: 0.1,  borderWidth: 3,
+      }]
+    },
+    options: { maintainAspectRatio: false,responsive: true,
+      scales: { y: { beginAtZero: true }}}
+  })
+</script>
+ <script src="../bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+      </div> 
+    </body>

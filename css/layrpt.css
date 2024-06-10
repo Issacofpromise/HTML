@@ -1,0 +1,61 @@
+div,input,textarea { 
+    box-sizing: border-box; 
+} 
+.navbar li{display: inline-block;width: 90px;text-align: center;
+    background-color: antiquewhite;border-radius: 30px;padding: 5px;}
+.navbar a{font-size: 16px; text-decoration: none;}
+.cont{width: 600px;margin: auto;}
+.first{width:80%;float: left;height: 150px; background:#eee ;margin-top: 10px;}
+.right{width:20%;float: right;background: azure;margin-top: 10px;}
+.foot{width:100%;height:90px;clear: both;background: wheat;}
+.header{width:100%;font-size:13zpx;height: 20%;}
+.sem{font-size:2px}
+.left{width:100%;height: 80%;}
+.pix{width:100%;height:150px;}
+.profile{ width:50px; height:30px;border-radius: 70px;float:left;}
+.white-box {
+	background: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 2px #eee;
+} .ft {padding: 10px 0 0 30px;border-left : 1px solid #6DD3F1
+} .pill { display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	padding: 2px 12px 5px 12px;
+	margin-right: 5px;
+	margin-top: 5px; 
+} @media(max-width:768px){.ft {border-left : 0px} .ce{margin: 10px 0 10px 0}}
+.grid{display: grid; grid-template-columns:1fr 1fr 1fr 1fr;
+grid-template-rows: 100px 100px 100px;grid-template-areas:
+"헤더 헤더 헤더 헤더"
+"사이드 써드 써드 써드"
+"사이드 써드 써드 써드";max-width: 650px;margin: auto} 
+.nagai{grid-area: 헤더;background-color: red} .uni{grid-area:사이드;background-color:darkorange} .six{grid-area:써드; background: rosybrown} 
+
+.grid1{display: grid; grid-template-columns:1fr 1fr 1fr;max-width: 650px;
+grid-template-rows: 200px 200px 200px;margin: auto} 
+.pic{grid-column: 1/3; grid-row: 1/3; }
+.grid1 img{width: 100%;display: block;height: 100%;}
+@media (max-width:576px){.grid{grid-template-areas:
+"사이드 사이드"
+"써드 써드"
+    "헤더 헤더"} .pic{grid-column: 1/2; grid-row: 1/2; }
+    .grid1{grid-template-columns:300px; grid-gap: 5px}}
+.gray{background-color: aliceblue;height: 1500px; }
+.image{float: right;width: 400px;position: sticky; top: 100px}
+.flip{width: 300px;height: 300px;margin-top: 100px;margin-left: auto}
+.in{width: 100%;height: 100%;position: relative;transition: all 2s;
+transform-style:preserve-3d}
+.in:hover{transform: rotateY(180deg)}
+.fnt{width: 100%;position: absolute;backface-visibility: hidden;z-index: 1}
+.bck{position: absolute;text-align: center;width: 100%;height: 100%;
+    background-color: burlywood;border-radius: 50%;padding-top: 150px;
+    transform:rotateY(180deg)}
+.text { float: left; width : 300px; }
+
+ .scroll-container {
+  height: 1000px;overflow-y: scroll;
+} .scroll-image {
+  transition: all 0.5s ease-in-out;
+}

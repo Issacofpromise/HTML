@@ -1,0 +1,145 @@
+
+body {
+    margin: 0px; 
+}
+div,input,textarea { 
+    box-sizing: border-box; 
+}
+textarea { border: 2px solid black; max-width: 407px; max-height: 200px;font-weight: 900}
+
+p { margin-top: 13px;  margin-bottom: 5px; text-align: left;
+}.cont{width: 1000px;}
+.header{width: 100%;height: 80px;background-color: LightSalmon;}
+.left{width:20%;height: 400px;background-color:cornflowerblue;float: left;}
+.right{width:80%;height: 400px;background-color:skyblue;float: right;}
+.foot{width: 100%;height: 75px;background-color: gray;clear: both;}
+
+.profile{ width:150px; height:200px; 
+   display:block; margin:auto;}
+
+#title {font-size: 30px; 
+  text-align: center;}
+
+.box{background-color: #ea4e4e; width: 200px;margin: auto;
+padding: 30px;border-radius: 10px;color: bisque;
+box-shadow: 10px 10px lightblue;}
+
+.bg {  width: 100%;    background-image: url(../img/shoes.jpg);
+    background-size: 100%;  background-repeat: no-repeat;
+   padding: 1px;    position: relative;
+}
+.hon {
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 35px
+}.box1 {
+    position: relative;
+        width: 100%;
+    height: 500px;
+}.last {
+    width: 75%; max-width: 500px;background:#CCCCFF ;
+   margin: auto; position: relative;top: 10px;
+   opacity: 0.9;padding: 0px 3px 1px 6px
+}.last::before{color: #B951F8; font-size: 20px;content: 'really'}
+.flex {display: flex; padding: 15px;height: 60px}
+.test {
+    width: 20rem;background: #FADBD8;height: 10vh
+}
+.bx { width : 200px;  height : 50px;
+font-size: 20px; font-weight: 550;
+background-color:aliceblue
+} .ti { font-size: 5px;font-size: 50px;
+    color: aliceblue;
+    margin-top: 70px;
+    margin-left: 7px;        
+} .bt {
+       float: left;width: 50%;
+      margin-top:10px;
+} .dup::after{ content: '';display: block;float: none;clear: both;
+} 
+
+button { color: black;font-weight: 500;font-size: 16px;  
+    padding: 10px 10px;border: none;width: 300px;display: block; background-color: #FADBD8;color: aliceblue;
+  margin: auto;
+} button:hover{color: aliceblue;background: #51BEF8}
+
+p,h1,h2{transform: rotate(0.05deg)}
+
+.font {
+    font-size: 17px;text-align: center;
+} 
+.container { 
+    width: 100%; max-width: 990px;margin: auto;margin-top:20px;text-align: center
+} .container div{float: left; width: 25%; }
+.container i { background-color: burlywood;width: 90px;height: 90px;
+  border-radius: 50px; padding-top: 20px;box-sizing:border-box; color: aliceblue;margin-top: 20px}
+.container::after{ content: '';display: block;float: none;clear: both;
+}
+h4 {
+    margin-bottom: 0px
+}.out {background-color: #FADBD8;padding: 30px;
+     max-width: 600px; margin: auto;border-radius: 25px
+}.dup { width: 90%; margin: auto;
+background-color: white;padding: 30px;
+} input, textarea {padding: 10px;font-size: 17px; border-radius: 10px;width: 100%;
+} .lef {
+   float: left;width: 50%;padding: 10px; 
+} .xes { width: 100%;padding: 10px    
+} .kata {
+    margin-top: 0px; margin-bottom: 30px
+} .st { margin-left: 55px; background-color: #F1C46D;
+    width: 70%;padding:10px;font-size: 14px;border: none;
+    border-radius: 5px
+}.tedu { background-color: #eee;padding: 20px;margin: 15px  
+} .ord { display: flex;width: 90%;margin: auto;max-width:800px;
+} .item { padding: 10px; margin: auto; 
+} .item img {width: 100%; max-width:300px; display: block}
+.ovl { position: absolute; 
+    width: 100%;height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 2s;
+    transition-timing-function: cubic-bezier(.07, .87, .71, 0)
+}.ovl:hover{ opacity: 1}
+.ovl-wrap {  position: absolute;width: 100%;height: 100%;overflow: hidden }
+.ovl-wrap:hover .ovl-blc{margin-top: 50%}
+.ovl-blc {width: 100%;height: 100%; background: rgba(0,0,0,0.5); margin-top: 100%;transition: 1s;padding: 1px
+}.ts { color: aliceblue;text-align: center;font-weight: 400;
+}.ts1 { color: aliceblue; text-align: center}
+ @media (max-width:1200px){.ti{font-size: 40px}
+    .bx{ font-weight: 200 } button {width: 250px}
+    .container div{width: 50%}.container {max-width: 600px}}
+@media screen and (max-width:768px){.ti{font-size: 35px}
+    button {width: 200px} .container div{width: 100%}}
+@media (max-width:576px){.ti{font-size: 28px}
+    .st { margin-left: 40px}
+    .bx{ font-size: 17px } button {width: 150px; background-color: #F8B151; color: aliceblue}}
+
+.file::file-selector-button { background-color: palevioletred;color: aliceblue;border: none;padding: 10px;border-radius: 5px    
+}.file::file-selector-button:hover{background-color: palegreen}
+input::-webkit-input-placeholder {color: hotpink}
+input[type=range]{appearance: none}
+input[type="range" i]::-webkit-slider-runnable-track {background-color:#FA8072}
+input[type=range]::-webkit-slider-thumb {appearance: none;background: #48C9B0; width:20px;height:20px  }
+progress {appearance: none}
+progress::-webkit-progress-inner-element {width: 250px;height: 30px;margin-left: 10px}
+progress::-webkit-progress-bar {border-radius: 5px;background-image:linear-gradient(#7FB3D5,#E74C3C)}  
+progress::-webkit-progress-value {background-image:linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));border-radius: 5px;}
+.video-box {max-width: 700px;margin: auto;height: 500px; position: relative;
+} .video{  position: absolute;  width : 100%;  top: 50%;  left: 50%;
+  transform : translate(-50%,-50%);
+} .ani{text-align: center;transform: translate3d(0,0,0) scale(1.8); }
+.ani:hover{animation-name: 와가; animation-duration: 4s;
+    animation-iteration-count: 3; animation-play-state: paused; }
+@keyframes 와가{0%{transform: scale(1.8) rotate(90deg) }
+}.mull{width: 180px;background: black;color: white;height: 100%;padding: 25px; position: fixed;z-index: 1;transform: translateX(-150px);text-align: end;
+transition: all 1s;cursor: pointer}
+.mull:hover{text-align: center; transform: translateX(-1px);}
+@keyframes ite{0%{transform: translateX(-100px)} 
+    50%{transform: translateX(60px) skewX(30deg)}
+100%{transform: translateX(0px)} }
+.elec {text-align: center}
+.mull:hover .elec { animation-name: ite; animation-duration: 2s}
+
+    
+

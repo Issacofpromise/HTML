@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link href="../css/layrpt.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+<body style="background-color: lightblue; height: 3000px;padding: 100px">
+ <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<div class="gray scroll-container">
+ <div class='image'>
+ <img class="scroll-image" src="https://picsum.photos/500?r=0" width="100%" >
+ </div>
+ <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus hic, aliquid magnam culpa est eum, dicta incidunt assumenda, neque labore nisi velit qui quis! Voluptatem harum possimus placeat aspernatur.
+ <br><br><br><br><br><br><br><br><br><br>
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus hic, aliquid magnam culpa est eum, dicta incidunt assumenda, neque labore nisi velit qui quis! Voluptatem harum possimus placeat aspernatur.
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste pariatur, et doloremque sunt aliquam in incidunt labore voluptatem voluptatum, deleniti quisquam earum ducimus placeat, explicabo molestiae libero recusandae voluptate dolorem.
+  <br><br><br><br><br><br><br><br><br><br>
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus hic, aliquid magnam culpa est eum, dicta incidunt assumenda, neque labore nisi velit qui quis! Voluptatem harum possimus placeat aspernatur.
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste pariatur, et doloremque sunt aliquam in incidunt labore voluptatem voluptatum, deleniti quisquam earum ducimus placeat, explicabo molestiae libero recusandae voluptate dolorem.
+ </div><div style="clear: both"></div></div>
+ <script>
+ const scrollImage = document.querySelector('.scroll-image');
+const scrollContainer = document.querySelector('.scroll-container');
+
+scrollContainer.addEventListener('scroll', () => {
+  const opacity = 1 - (scrollContainer.scrollTop / (scrollContainer.scrollHeight - scrollContainer.clientHeight));
+  scrollImage.style.opacity = opacity;
+});   
+    </script>
+ <div class="flip"><div class="in">
+ <img src='../img/profile.png' class="fnt">
+<div class="bck"><h3>Developer MiYeon Lee</h3>010-8498-11xx</div>
+</div></div>   
+</body>

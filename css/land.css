@@ -1,0 +1,35 @@
+body {margin: 0;font-family: 'nanumsquare'} 
+div {box-sizing: border-box;
+}.background { height: 510px;padding: 20px;color: white;
+background-image: linear-gradient(#B951F8, #FADBD8)
+} .container { max-width: 1800px
+} .text { float: left; max-width:500px;
+  margin-left: 20px;
+} .iphone {width: 330px;float: right;margin-top: 130px;
+} .btn { padding: 15px 20px; font-size: 16px;font-family: 'nanumsquare';
+  font-weight: 600; border: none;border-radius: 5px;cursor: pointer;
+}.black {background: #444;color: white;
+}.black:active { background-color: yellowgreen
+}.black:hover {color: orangered
+} .theme{text-align: center; margin-top: 50px}
+.service { background-image: linear-gradient(rgba(0, 0, 255, 0.5), #F8DB51); 
+    color: white;text-align: center; padding: 30px 0 40px ; margin-top: 30px
+}.items {display: flex;max-width: 70%;margin: auto;flex-wrap: wrap;
+} .items div {  width: calc(50% - 25%)
+} .ic { background-color: white;width: 90px;height: 90px;
+  border-radius: 50px; padding: 20px;box-sizing:border-box; color: #4e61c0;margin-top: 20px}
+.port {text-align: center;margin-top: 50px
+}.pic {background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/portfolio-1.jpg");width: 50%;height: 350px; background-size: cover;position: relative}
+.wb{position: absolute;width: 100%;height: 100%;transition: border 1s;z-index : 2;} .wb:hover{border: 25px solid white;}
+:root{--orora:rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)}
+.pic-1 {background-image:linear-gradient(var(--orora)), url("../img/portfolio-2.jpg");width: 50%;height: 350px; background-size: cover;position: relative}
+.folio {text-align: left;color: white;display: flex;flex-wrap: wrap;
+}.xt{padding: 50px}
+.pic-2 {background-image:linear-gradient(#922B21, rgba(146, 43, 33,0.6)),url("../img/portfolio-3.jpg");width: 50%;height: 350px; background-size: cover;position: relative}
+.pic-3 {background-image:linear-gradient(var(--orora)), url("../img/portfolio-4.jpg");width: 50%;height: 350px; background-size: cover;position: relative}
+@media(max-width : 992px) {
+  .iphone { width: 260px;display: block;float: none;margin: auto;margin-top: 42px;
+    } .background { height: auto;padding: 20px 20px 0px}
+  .text {float: none;margin-top: 50px;text-align: center;display: block;margin: auto;}  .items div {  width: 50%} .ic-1{margin-top: 20px}
+}@media (max-width:576px){.items{flex-direction: column}.items div {width: 100%}.ic-1{margin-top: 0}}
+@media (max-width:768px){.pic{width: 100%}.pic-1{width: 100%}.pic-2{width: 100%}.pic-3{width: 100%}}

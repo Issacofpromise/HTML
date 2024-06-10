@@ -1,0 +1,40 @@
+div{width: 400px; padding:19px;   
+} .fir:active { background : rgb(98, 56, 235);color: white;}
+.sec:active { background : rgb(251, 93, 180);color: white;}
+.thir:active { background : rgb(235, 235, 56);color: white;}
+.fir,.sec,.thir{border: 0.5rem outset pink; 
+} table {border: 1px solid #71b0d9;
+    border-collapse:collapse;margin: 50px;
+  } td{padding: 15px;border: 1px solid #71b0d9;   
+} tr:active { background : rgb(98, 56, 235);color: white;}
+.bb .ta:active { background : rgb(197, 247, 69);color: white;}
+.sh{>li{list-style: none;padding: 15px;border: 1px solid salmon;
+width:400px}
+:active { background : rgb(197, 247, 69);color: white;}
+}
+@mixin base($bc){padding: 10px;color: white;
+    background: $bc;margin-left:30px;}
+.gr{@include base(rgb(197, 247, 69));margin-top: 30px;}
+.or{@include base(pink)} .red{@include base(powderblue)}
+
+.ex{padding: 10px;color: white;background:rgb(197, 247, 69);
+    margin-left:30px;margin-top: 30px;
+} .ex1{@extend .ex; background: pink;margin-top: 0px;}
+.ex2{@extend .ex; background: powderblue;margin-top: 0px;}
+
+%cmm{padding: 10px;color: white;margin-left:30px;}
+.ex3{@extend %cmm; background:rgb(197, 247, 69);
+    margin-top: 30px;}
+.ex4{@extend %cmm;background: pink}
+.ex5{@extend %cmm;background: powderblue}
+%eq{border: 1px solid black} // bootstrap 사용 시 예.
+.row{margin-left:30px;text-align: center;}
+.col-6{@extend %eq;} .col-4{@extend %eq;} .col-3{@extend %eq}
+div{box-sizing: border-box;}
+@mixin qw($er){float: left;width:$er;
+    border: 1px solid black;text-align: center;}
+%zx{@media (max-width:576px){float: none;};}
+.col-5{@include qw(50%);@extend %zx;}
+.col-33{@include qw(100%/3);@extend %zx;}
+.col-7{@include qw(25%)}
+.col-8{@include qw(100%/5)}

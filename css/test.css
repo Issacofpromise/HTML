@@ -1,0 +1,165 @@
+div {
+  width: 400px;
+  padding: 19px;
+}
+
+.fir:active {
+  background: rgb(98, 56, 235);
+  color: white;
+}
+
+.sec:active {
+  background: rgb(251, 93, 180);
+  color: white;
+}
+
+.thir:active {
+  background: rgb(235, 235, 56);
+  color: white;
+}
+
+.fir, .sec, .thir {
+  border: 0.5rem outset pink;
+}
+
+table {
+  border: 1px solid #71b0d9;
+  border-collapse: collapse;
+  margin: 50px;
+}
+
+td {
+  padding: 15px;
+  border: 1px solid #71b0d9;
+}
+
+tr:active {
+  background: rgb(98, 56, 235);
+  color: white;
+}
+
+.bb .ta:active {
+  background: rgb(197, 247, 69);
+  color: white;
+}
+
+.sh > li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid salmon;
+  width: 400px;
+}
+.sh :active {
+  background: rgb(197, 247, 69);
+  color: white;
+}
+
+.gr {
+  padding: 10px;
+  color: white;
+  background: rgb(197, 247, 69);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.or {
+  padding: 10px;
+  color: white;
+  background: pink;
+  margin-left: 30px;
+}
+
+.red {
+  padding: 10px;
+  color: white;
+  background: powderblue;
+  margin-left: 30px;
+}
+
+.ex, .ex2, .ex1 {
+  padding: 10px;
+  color: white;
+  background: rgb(197, 247, 69);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.ex1 {
+  background: pink;
+  margin-top: 0px;
+}
+
+.ex2 {
+  background: powderblue;
+  margin-top: 0px;
+}
+
+.ex5, .ex4, .ex3 {
+  padding: 10px;
+  color: white;
+  margin-left: 30px;
+}
+
+.ex3 {
+  background: rgb(197, 247, 69);
+  margin-top: 30px;
+}
+
+.ex4 {
+  background: pink;
+}
+
+.ex5 {
+  background: powderblue;
+}
+
+.col-3, .col-4, .col-6 {
+  border: 1px solid black;
+}
+
+.row {
+  margin-left: 30px;
+  text-align: center;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.col-5 {
+  float: left;
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .col-5 {
+    float: none;
+  }
+}
+
+.col-33 {
+  float: left;
+  width: 33.3333333333%;
+  border: 1px solid black;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .col-33 {
+    float: none;
+  }
+}
+
+.col-7 {
+  float: left;
+  width: 25%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.col-8 {
+  float: left;
+  width: 20%;
+  border: 1px solid black;
+  text-align: center;
+}/*# sourceMappingURL=test.css.map */
